@@ -1,0 +1,868 @@
+/* =========================================================
+   SASSY BELLE CANDLE CO., LLC
+   CANDLE CARE PAGE
+========================================================= */
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.care-hero {
+
+  min-height: 470px;
+
+  padding: 90px 25px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+
+  background:
+
+    radial-gradient(
+      circle at 18% 30%,
+      rgba(200,189,208,.55),
+      transparent 30%
+    ),
+
+    radial-gradient(
+      circle at 82% 70%,
+      rgba(168,181,160,.55),
+      transparent 30%
+    ),
+
+    var(--cream);
+}
+
+
+.care-hero-content {
+
+  max-width: 800px;
+}
+
+
+.care-hero h1 {
+
+  margin: 10px 0 20px;
+
+  color: var(--brown);
+
+  font-family: var(--serif);
+
+  font-size:
+    clamp(60px, 8vw, 100px);
+
+  font-weight: 500;
+
+  line-height: .9;
+}
+
+
+.care-hero h1 em {
+
+  display: block;
+
+  color: var(--sage-dark);
+
+  font-family: var(--script);
+
+  font-size:
+    clamp(72px, 8vw, 110px);
+
+  font-weight: 400;
+}
+
+
+.care-hero-content > p:last-child {
+
+  max-width: 650px;
+
+  margin: 20px auto;
+
+  color: var(--brown-light);
+
+  font-family: var(--serif);
+
+  font-size: 20px;
+
+  line-height: 1.5;
+}
+
+
+/* =========================================================
+   INTRO
+========================================================= */
+
+.care-intro {
+
+  padding:
+    90px 25px 75px;
+
+  text-align: center;
+
+  background: var(--ivory);
+}
+
+
+.care-intro h2 {
+
+  margin:
+    8px 0 15px;
+
+  color: var(--brown);
+
+  font-family: var(--serif);
+
+  font-size:
+    clamp(50px, 6vw, 72px);
+
+  font-weight: 500;
+
+  line-height: .9;
+}
+
+
+.care-intro h2 em {
+
+  color: var(--sage-dark);
+
+  font-family: var(--script);
+
+  font-size: 1.15em;
+
+  font-weight: 400;
+}
+
+
+.care-intro > p:last-child {
+
+  max-width: 650px;
+
+  margin: auto;
+
+  color: var(--brown-light);
+
+  font-family: var(--serif);
+
+  font-size: 19px;
+
+  line-height: 1.5;
+}
+
+
+/* =========================================================
+   CARE STEPS
+========================================================= */
+
+.care-steps {
+
+  padding:
+    105px 6vw;
+
+  background: var(--cream);
+}
+
+
+.care-heading {
+
+  max-width: 720px;
+
+  margin:
+    0 auto 55px;
+
+  text-align: center;
+}
+
+
+.care-heading h2 {
+
+  margin:
+    8px 0;
+
+  color: var(--brown);
+
+  font-family: var(--serif);
+
+  font-size:
+    clamp(50px, 6vw, 72px);
+
+  font-weight: 500;
+
+  line-height: .9;
+}
+
+
+.care-heading h2 em {
+
+  color: var(--sage-dark);
+
+  font-family: var(--script);
+
+  font-weight: 400;
+}
+
+
+.care-grid {
+
+  max-width: 1100px;
+
+  margin: auto;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  gap: 25px;
+}
+
+
+.care-card {
+
+  position: relative;
+
+  padding:
+    45px 30px;
+
+  text-align: center;
+
+  background: var(--ivory);
+
+  border:
+    1px solid
+    rgba(118,91,74,.10);
+
+  transition:
+    transform .25s ease,
+    box-shadow .25s ease;
+}
+
+
+.care-card:hover {
+
+  transform: translateY(-5px);
+
+  box-shadow:
+    0 15px 35px
+    rgba(80,60,45,.08);
+}
+
+
+.care-number {
+
+  color: var(--mauve);
+
+  font-family: var(--serif);
+
+  font-size: 14px;
+
+  letter-spacing: .2em;
+}
+
+
+.care-icon {
+
+  margin:
+    20px auto;
+
+  width: 62px;
+
+  height: 62px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border:
+    1px solid var(--sage);
+
+  border-radius: 50%;
+
+  color: var(--sage-dark);
+
+  font-size: 22px;
+}
+
+
+.care-card h3 {
+
+  margin-bottom: 12px;
+
+  color: var(--brown);
+
+  font-family: var(--serif);
+
+  font-size: 30px;
+
+  font-weight: 500;
+}
+
+
+.care-card p {
+
+  color: var(--brown-light);
+
+  font-family: var(--serif);
+
+  font-size: 17px;
+
+  line-height: 1.5;
+}
+
+
+/* =========================================================
+   BURNING GUIDE
+========================================================= */
+
+.burning-guide {
+
+  display: grid;
+
+  grid-template-columns:
+    1fr 1fr;
+
+  min-height: 600px;
+
+  background: var(--sage-light);
+}
+
+
+.guide-image {
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  background:
+
+    radial-gradient(
+      circle at center,
+      var(--sage),
+      var(--sage-dark)
+    );
+}
+
+
+.guide-circle {
+
+  width: 320px;
+
+  height: 320px;
+
+  border:
+    1px solid
+    rgba(252,249,243,.70);
+
+  border-radius: 50%;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  color: var(--ivory);
+
+  box-shadow:
+    inset 0 0 0 15px
+    rgba(252,249,243,.08);
+}
+
+
+.guide-circle span {
+
+  font-family: var(--serif);
+
+  font-size: 18px;
+
+  letter-spacing: .25em;
+}
+
+
+.guide-circle strong {
+
+  margin: 4px 0;
+
+  font-family: var(--script);
+
+  font-size: 60px;
+
+  font-weight: 400;
+}
+
+
+.guide-content {
+
+  padding:
+    90px 8vw;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+}
+
+
+.guide-content h2 {
+
+  margin:
+    8px 0 25px;
+
+  color: var(--brown);
+
+  font-family: var(--serif);
+
+  font-size:
+    clamp(50px, 5vw, 72px);
+
+  font-weight: 500;
+
+  line-height: .9;
+}
+
+
+.guide-content h2 em {
+
+  display: block;
+
+  color: var(--mauve);
+
+  font-family: var(--script);
+
+  font-weight: 400;
+}
+
+
+.guide-content p:not(.section-kicker) {
+
+  max-width: 560px;
+
+  margin-bottom: 18px;
+
+  color: var(--brown-light);
+
+  font-family: var(--serif);
+
+  font-size: 18px;
+
+  line-height: 1.55;
+}
+
+
+/* =========================================================
+   SAFETY
+========================================================= */
+
+.safety-section {
+
+  padding:
+    110px 6vw;
+
+  background: var(--ivory);
+}
+
+
+.safety-heading {
+
+  max-width: 720px;
+
+  margin:
+    0 auto 55px;
+
+  text-align: center;
+}
+
+
+.safety-heading h2 {
+
+  margin:
+    8px 0 15px;
+
+  color: var(--brown);
+
+  font-family: var(--serif);
+
+  font-size:
+    clamp(50px, 6vw, 72px);
+
+  font-weight: 500;
+
+  line-height: .9;
+}
+
+
+.safety-heading h2 em {
+
+  color: var(--sage-dark);
+
+  font-family: var(--script);
+
+  font-weight: 400;
+}
+
+
+.safety-heading > p:last-child {
+
+  color: var(--brown-light);
+
+  font-family: var(--serif);
+
+  font-size: 18px;
+
+  line-height: 1.5;
+}
+
+
+.safety-grid {
+
+  max-width: 1100px;
+
+  margin: auto;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  gap: 20px;
+}
+
+
+.safety-item {
+
+  padding:
+    30px 25px;
+
+  border-top:
+    2px solid var(--sage);
+
+  background: var(--cream);
+}
+
+
+.safety-item > span {
+
+  color: var(--mauve);
+
+  font-family: var(--serif);
+
+  font-size: 13px;
+
+  letter-spacing: .15em;
+}
+
+
+.safety-item h3 {
+
+  margin:
+    10px 0;
+
+  color: var(--brown);
+
+  font-family: var(--serif);
+
+  font-size: 25px;
+
+  font-weight: 500;
+}
+
+
+.safety-item p {
+
+  color: var(--brown-light);
+
+  font-family: var(--serif);
+
+  font-size: 15px;
+
+  line-height: 1.5;
+}
+
+
+/* =========================================================
+   STORAGE
+========================================================= */
+
+.storage-section {
+
+  padding:
+    100px 25px;
+
+  background: var(--lavender-light);
+
+  text-align: center;
+}
+
+
+.storage-content {
+
+  max-width: 750px;
+
+  margin: auto;
+}
+
+
+.storage-content h2 {
+
+  margin:
+    8px 0 20px;
+
+  color: var(--brown);
+
+  font-family: var(--serif);
+
+  font-size:
+    clamp(50px, 6vw, 72px);
+
+  font-weight: 500;
+
+  line-height: .9;
+}
+
+
+.storage-content h2 em {
+
+  color: var(--sage-dark);
+
+  font-family: var(--script);
+
+  font-weight: 400;
+}
+
+
+.storage-content p:not(.section-kicker) {
+
+  max-width: 650px;
+
+  margin:
+    0 auto 18px;
+
+  color: var(--brown-light);
+
+  font-family: var(--serif);
+
+  font-size: 18px;
+
+  line-height: 1.55;
+}
+
+
+/* =========================================================
+   CLOSING
+========================================================= */
+
+.care-closing {
+
+  padding:
+    110px 25px;
+
+  text-align: center;
+
+  background: var(--brown);
+}
+
+
+.care-closing > div {
+
+  max-width: 750px;
+
+  margin: auto;
+}
+
+
+.care-closing .section-kicker {
+
+  color: var(--lavender-light);
+}
+
+
+.care-closing h2 {
+
+  margin:
+    10px 0 20px;
+
+  color: var(--ivory);
+
+  font-family: var(--serif);
+
+  font-size:
+    clamp(52px, 6vw, 78px);
+
+  font-weight: 500;
+
+  line-height: .9;
+}
+
+
+.care-closing h2 em {
+
+  color: var(--sage-light);
+
+  font-family: var(--script);
+
+  font-weight: 400;
+}
+
+
+.care-closing p:not(.section-kicker) {
+
+  max-width: 600px;
+
+  margin:
+    0 auto 30px;
+
+  color:
+    rgba(252,249,243,.85);
+
+  font-family: var(--serif);
+
+  font-size: 19px;
+
+  line-height: 1.55;
+}
+
+
+.care-closing .outline-button {
+
+  display: inline-block;
+
+  padding:
+    13px 28px;
+
+  border:
+    1px solid var(--ivory);
+
+  color: var(--ivory);
+
+  font-family: var(--serif);
+
+  transition: .25s ease;
+}
+
+
+.care-closing .outline-button:hover {
+
+  background: var(--ivory);
+
+  color: var(--brown);
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+  .care-grid {
+
+    grid-template-columns:
+      1fr;
+  }
+
+
+  .safety-grid {
+
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+  .care-hero {
+
+    min-height: 390px;
+
+    padding:
+      65px 20px;
+  }
+
+
+  .care-hero h1 {
+
+    font-size: 58px;
+  }
+
+
+  .care-hero h1 em {
+
+    font-size: 72px;
+  }
+
+
+  .care-intro {
+
+    padding:
+      70px 20px;
+  }
+
+
+  .care-steps {
+
+    padding:
+      75px 20px;
+  }
+
+
+  .burning-guide {
+
+    grid-template-columns: 1fr;
+  }
+
+
+  .guide-image {
+
+    min-height: 390px;
+  }
+
+
+  .guide-content {
+
+    padding:
+      70px 25px;
+  }
+
+
+  .safety-section {
+
+    padding:
+      75px 20px;
+  }
+
+
+  .safety-grid {
+
+    grid-template-columns:
+      1fr;
+  }
+
+
+  .storage-section {
+
+    padding:
+      75px 20px;
+  }
+
+
+  .care-closing {
+
+    padding:
+      80px 20px;
+  }
+
+}
