@@ -1,0 +1,722 @@
+/* =========================================================
+   SASSY BELLE CANDLE CO., LLC
+   FRAGRANCES PAGE
+========================================================= */
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.fragrance-hero {
+
+  min-height: 470px;
+
+  padding: 90px 25px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+
+  background:
+
+    radial-gradient(
+      circle at 18% 30%,
+      rgba(200,189,208,.55),
+      transparent 30%
+    ),
+
+    radial-gradient(
+      circle at 82% 70%,
+      rgba(168,181,160,.55),
+      transparent 30%
+    ),
+
+    var(--cream);
+}
+
+
+.fragrance-hero-content {
+
+  max-width: 800px;
+}
+
+
+.fragrance-hero h1 {
+
+  margin: 10px 0 20px;
+
+  color: var(--brown);
+
+  font-family: var(--serif);
+
+  font-size:
+    clamp(60px, 8vw, 100px);
+
+  font-weight: 500;
+
+  line-height: .9;
+}
+
+
+.fragrance-hero h1 em {
+
+  display: block;
+
+  color: var(--sage-dark);
+
+  font-family: var(--script);
+
+  font-size:
+    clamp(72px, 8vw, 110px);
+
+  font-weight: 400;
+}
+
+
+.fragrance-hero-content > p:last-child {
+
+  max-width: 650px;
+
+  margin: 20px auto;
+
+  color: var(--brown-light);
+
+  font-family: var(--serif);
+
+  font-size: 20px;
+
+  line-height: 1.5;
+}
+
+
+/* =========================================================
+   INTRO
+========================================================= */
+
+.fragrance-intro {
+
+  padding:
+    90px 25px 75px;
+
+  text-align: center;
+
+  background: var(--ivory);
+}
+
+
+.fragrance-intro h2 {
+
+  margin:
+    8px 0 15px;
+
+  color: var(--brown);
+
+  font-family: var(--serif);
+
+  font-size:
+    clamp(48px, 6vw, 72px);
+
+  font-weight: 500;
+
+  line-height: .9;
+}
+
+
+.fragrance-intro h2 em {
+
+  color: var(--sage-dark);
+
+  font-family: var(--script);
+
+  font-size: 1.15em;
+
+  font-weight: 400;
+}
+
+
+.fragrance-intro > p:last-child {
+
+  color: var(--brown-light);
+
+  font-family: var(--serif);
+
+  font-size: 19px;
+}
+
+
+/* =========================================================
+   FRAGRANCE FAMILY
+========================================================= */
+
+.fragrance-family {
+
+  min-height: 570px;
+
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  align-items: stretch;
+}
+
+
+.family-content {
+
+  padding:
+    90px 8vw;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+}
+
+
+.family-number {
+
+  margin-bottom: 18px;
+
+  color: var(--mauve);
+
+  font-family: var(--serif);
+
+  font-size: 15px;
+
+  letter-spacing: .22em;
+}
+
+
+.family-content h2 {
+
+  margin:
+    10px 0 20px;
+
+  color: var(--brown);
+
+  font-family: var(--serif);
+
+  font-size:
+    clamp(50px, 5vw, 72px);
+
+  font-weight: 500;
+
+  line-height: .9;
+}
+
+
+.family-content h2 em {
+
+  display: block;
+
+  color: var(--sage-dark);
+
+  font-family: var(--script);
+
+  font-size: 1.1em;
+
+  font-weight: 400;
+}
+
+
+.family-content > p:not(.section-kicker) {
+
+  max-width: 520px;
+
+  color: var(--brown-light);
+
+  font-family: var(--serif);
+
+  font-size: 19px;
+
+  line-height: 1.55;
+}
+
+
+/* =========================================================
+   SCENT LIST
+========================================================= */
+
+.scent-list {
+
+  margin-top: 28px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 10px;
+}
+
+
+.scent-list div {
+
+  color: var(--brown);
+
+  font-family: var(--serif);
+
+  font-size: 17px;
+}
+
+
+.scent-list span {
+
+  margin-right: 9px;
+
+  color: var(--mauve);
+}
+
+
+/* =========================================================
+   ART PANELS
+========================================================= */
+
+.family-art {
+
+  min-height: 570px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+}
+
+
+.warm {
+
+  background: var(--cream);
+}
+
+
+.warm-art {
+
+  background:
+    radial-gradient(
+      circle at center,
+      var(--brown-light),
+      var(--brown)
+    );
+}
+
+
+.fresh {
+
+  background: var(--sage-light);
+}
+
+
+.fresh-art {
+
+  background:
+    radial-gradient(
+      circle at center,
+      var(--sage),
+      var(--sage-dark)
+    );
+}
+
+
+.sweet {
+
+  background: var(--lavender-light);
+}
+
+
+.sweet-art {
+
+  background:
+    radial-gradient(
+      circle at center,
+      var(--mauve),
+      var(--lavender-dark)
+    );
+}
+
+
+.art-circle {
+
+  width: 310px;
+
+  height: 310px;
+
+  border:
+    1px solid
+    rgba(252,249,243,.65);
+
+  border-radius: 50%;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  color: var(--ivory);
+
+  box-shadow:
+    inset 0 0 0 15px
+    rgba(252,249,243,.08),
+
+    inset 0 0 0 16px
+    rgba(252,249,243,.15);
+}
+
+
+.art-circle span {
+
+  font-family: var(--serif);
+
+  font-size: 17px;
+
+  letter-spacing: .3em;
+}
+
+
+.art-circle strong {
+
+  margin: 5px 0;
+
+  font-family: var(--script);
+
+  font-size: 60px;
+
+  font-weight: 400;
+}
+
+
+/* =========================================================
+   SCENT NOTES
+========================================================= */
+
+.scent-notes {
+
+  padding:
+    110px 6vw;
+
+  background: var(--ivory);
+}
+
+
+.scent-notes-heading {
+
+  max-width: 700px;
+
+  margin:
+    0 auto 55px;
+
+  text-align: center;
+}
+
+
+.scent-notes-heading h2 {
+
+  margin:
+    8px 0 15px;
+
+  color: var(--brown);
+
+  font-family: var(--serif);
+
+  font-size:
+    clamp(50px, 6vw, 72px);
+
+  font-weight: 500;
+
+  line-height: .9;
+}
+
+
+.scent-notes-heading h2 em {
+
+  color: var(--sage-dark);
+
+  font-family: var(--script);
+
+  font-weight: 400;
+}
+
+
+.scent-notes-heading > p:last-child {
+
+  color: var(--brown-light);
+
+  font-family: var(--serif);
+
+  font-size: 18px;
+}
+
+
+.notes-grid {
+
+  max-width: 1100px;
+
+  margin: auto;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, 1fr);
+
+  gap: 20px;
+}
+
+
+.notes-grid article {
+
+  padding:
+    40px 25px;
+
+  text-align: center;
+
+  background: var(--cream);
+
+  border:
+    1px solid
+    rgba(118,91,74,.10);
+}
+
+
+.note-icon {
+
+  color: var(--mauve);
+
+  font-size: 20px;
+}
+
+
+.notes-grid h3 {
+
+  margin:
+    12px 0 8px;
+
+  color: var(--brown);
+
+  font-family: var(--serif);
+
+  font-size: 29px;
+
+  font-weight: 500;
+}
+
+
+.notes-grid p {
+
+  color: var(--brown-light);
+
+  font-family: var(--serif);
+
+  font-size: 15px;
+
+  line-height: 1.5;
+}
+
+
+/* =========================================================
+   FINAL CTA
+========================================================= */
+
+.fragrance-library {
+
+  padding:
+    110px 25px;
+
+  text-align: center;
+
+  background: var(--brown);
+}
+
+
+.fragrance-library > div {
+
+  max-width: 720px;
+
+  margin: auto;
+}
+
+
+.fragrance-library .section-kicker {
+
+  color: var(--lavender-light);
+}
+
+
+.fragrance-library h2 {
+
+  margin:
+    10px 0 20px;
+
+  color: var(--ivory);
+
+  font-family: var(--serif);
+
+  font-size:
+    clamp(52px, 6vw, 78px);
+
+  font-weight: 500;
+
+  line-height: .9;
+}
+
+
+.fragrance-library h2 em {
+
+  color: var(--sage-light);
+
+  font-family: var(--script);
+
+  font-weight: 400;
+}
+
+
+.fragrance-library p:not(.section-kicker) {
+
+  max-width: 600px;
+
+  margin:
+    0 auto 30px;
+
+  color:
+    rgba(252,249,243,.85);
+
+  font-family: var(--serif);
+
+  font-size: 19px;
+
+  line-height: 1.55;
+}
+
+
+.fragrance-library .outline-button {
+
+  display: inline-block;
+
+  padding:
+    13px 28px;
+
+  border:
+    1px solid var(--ivory);
+
+  color: var(--ivory);
+
+  font-family: var(--serif);
+
+  transition: .25s ease;
+}
+
+
+.fragrance-library .outline-button:hover {
+
+  background: var(--ivory);
+
+  color: var(--brown);
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+  .notes-grid {
+
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+  .fragrance-hero {
+
+    min-height: 390px;
+
+    padding:
+      65px 20px;
+  }
+
+
+  .fragrance-hero h1 {
+
+    font-size: 58px;
+  }
+
+
+  .fragrance-hero h1 em {
+
+    font-size: 72px;
+  }
+
+
+  .fragrance-family {
+
+    grid-template-columns: 1fr;
+  }
+
+
+  .family-content {
+
+    min-height: 450px;
+
+    padding:
+      70px 25px;
+  }
+
+
+  .family-art {
+
+    min-height: 390px;
+  }
+
+
+  .fresh .family-art {
+
+    order: 2;
+  }
+
+
+  .fresh .family-content {
+
+    order: 1;
+  }
+
+
+  .art-circle {
+
+    width: 250px;
+
+    height: 250px;
+  }
+
+
+  .notes-grid {
+
+    grid-template-columns: 1fr;
+  }
+
+
+  .scent-notes {
+
+    padding:
+      80px 20px;
+  }
+
+
+  .fragrance-library {
+
+    padding:
+      80px 20px;
+  }
+
+}
