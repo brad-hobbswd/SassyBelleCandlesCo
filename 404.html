@@ -151,11 +151,6 @@
             }
         }
     </style>
-  <style>
-    .page-brand{padding:24px;text-align:center;background:#fcf9f3;border-bottom:1px solid rgba(118,91,74,.12)}
-    .page-brand img{width:110px;height:110px;object-fit:cover;border-radius:50%;margin:auto}
-  </style>
-
 </head>
 
 <body>
@@ -173,42 +168,97 @@
 
     <!-- Header -->
     <header class="site-header">
-        <nav class="navbar">
 
-            <div class="nav-left">
-                <a href="index.html">Home</a>
-                <a href="shop.html">Shop</a>
-                <a href="about.html">About</a>
-                <a href="candle-care.html">Candle Care</a>
-            </div>
+    <nav class="navbar">
 
-            <a href="index.html" class="logo-link">
-                <img
-                    src="assets/6EBD7E61-D381-4170-96AF-A1E60A6B6A3A.jpeg"
-                    alt="Sassy Belle Candle Co., LLC"
-                    class="main-logo"
-                >
-            </a>
 
-            <div class="nav-right">
-                <a href="fragrances.html">Fragrances</a>
-                <a href="contact.html">Contact</a>
-                <a href="shop.html" class="shop-button">Shop Now</a>
-            </div>
+      <button
+        class="mobile-menu"
+        aria-label="Open menu"
+        aria-expanded="false"
+      >
 
-            <button
-                class="mobile-menu"
-                type="button"
-                aria-label="Open navigation menu"
-                aria-expanded="false"
-            >
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
+        <span></span>
+        <span></span>
+        <span></span>
 
-        </nav>
-    </header>
+      </button>
+
+
+
+      <div class="nav-left">
+
+        <a
+          href="index.html"
+          class="active"
+        >
+          Home
+        </a>
+
+
+        <a href="shop.html">
+          Shop <small>⌄</small>
+        </a>
+
+
+        <a href="about.html">
+          About
+        </a>
+
+
+        <a href="candle-care.html">
+          Candle Care
+        </a>
+
+      </div>
+
+
+
+      <!-- CENTER LOGO -->
+
+      <a
+        href="index.html"
+        class="main-logo"
+        aria-label="Sassy Belle Candle Co., LLC Home"
+      >
+
+        <img
+          src="assets/6EBD7E61-D381-4170-96AF-A1E60A6B6A3A.jpeg"
+          alt="Sassy Belle Candle Co., LLC"
+        >
+
+      </a>
+
+
+
+      <div class="nav-right">
+
+        <a href="fragrances.html">
+          Fragrances
+        </a>
+
+
+        <a href="contact.html">
+          Contact
+        </a>
+
+
+        <a
+          href="shop.html"
+          class="shop-button"
+        >
+
+          Shop Now
+
+          <span>🛒</span>
+
+        </a>
+
+      </div>
+
+    </nav>
+
+  </header>
 
     <!-- 404 Content -->
     <main class="error-page">
