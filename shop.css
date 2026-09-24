@@ -1,0 +1,749 @@
+/* =========================================================
+   SASSY BELLE CANDLE CO., LLC
+   SHOP PAGE
+========================================================= */
+
+
+/* =========================================================
+   SHOP HERO
+========================================================= */
+
+.shop-hero {
+
+  min-height: 410px;
+
+  padding: 80px 25px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+
+  background:
+
+    radial-gradient(
+      circle at 20% 30%,
+      rgba(200, 189, 208, .45),
+      transparent 30%
+    ),
+
+    radial-gradient(
+      circle at 80% 70%,
+      rgba(168, 181, 160, .45),
+      transparent 30%
+    ),
+
+    var(--cream);
+}
+
+
+.shop-hero-content {
+
+  max-width: 800px;
+}
+
+
+.shop-hero h1 {
+
+  margin: 5px 0 15px;
+
+  color: var(--brown);
+
+  font-family: var(--serif);
+
+  font-size:
+    clamp(55px, 7vw, 90px);
+
+  font-weight: 500;
+
+  line-height: .9;
+}
+
+
+.shop-hero h1 em {
+
+  display: block;
+
+  color: var(--sage-dark);
+
+  font-family: var(--script);
+
+  font-size:
+    clamp(60px, 7vw, 100px);
+
+  font-weight: 400;
+}
+
+
+.shop-hero p:not(.section-kicker) {
+
+  max-width: 620px;
+
+  margin: 20px auto;
+
+  color: var(--brown-light);
+
+  font-family: var(--serif);
+
+  font-size: 19px;
+
+  line-height: 1.45;
+}
+
+
+/* =========================================================
+   SHOP CATEGORY NAVIGATION
+========================================================= */
+
+.shop-navigation {
+
+  padding: 18px 25px;
+
+  display: flex;
+
+  justify-content: center;
+
+  flex-wrap: wrap;
+
+  gap: 10px;
+
+  background: var(--brown);
+}
+
+
+.shop-navigation a {
+
+  padding: 9px 23px;
+
+  border: 1px solid
+    rgba(252, 249, 243, .45);
+
+  border-radius: 30px;
+
+  color: var(--ivory);
+
+  font-family: var(--serif);
+
+  font-size: 15px;
+
+  transition: .25s ease;
+}
+
+
+.shop-navigation a:hover {
+
+  background: var(--ivory);
+
+  color: var(--brown);
+}
+
+
+/* =========================================================
+   PRODUCT SECTIONS
+========================================================= */
+
+.product-section {
+
+  padding: 100px 6vw;
+
+  background: var(--ivory);
+}
+
+
+.product-section.alternate {
+
+  background: var(--cream);
+}
+
+
+/* =========================================================
+   PRODUCT HEADING
+========================================================= */
+
+.product-heading {
+
+  max-width: 720px;
+
+  margin: 0 auto 55px;
+
+  text-align: center;
+}
+
+
+.product-heading h2 {
+
+  margin: 8px 0 15px;
+
+  color: var(--brown);
+
+  font-family: var(--serif);
+
+  font-size:
+    clamp(45px, 5vw, 68px);
+
+  font-weight: 500;
+
+  line-height: .95;
+}
+
+
+.product-heading h2 em {
+
+  color: var(--sage-dark);
+
+  font-family: var(--script);
+
+  font-size: 1.15em;
+
+  font-weight: 400;
+}
+
+
+.product-heading > p:last-child {
+
+  max-width: 600px;
+
+  margin: auto;
+
+  color: var(--brown-light);
+
+  font-family: var(--serif);
+
+  font-size: 18px;
+}
+
+
+/* =========================================================
+   PRODUCT GRID
+========================================================= */
+
+.product-grid {
+
+  max-width: 1200px;
+
+  margin: auto;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  gap: 25px;
+}
+
+
+/* =========================================================
+   PRODUCT CARD
+========================================================= */
+
+.product-card {
+
+  overflow: hidden;
+
+  background: var(--white);
+
+  border:
+    1px solid rgba(118, 91, 74, .12);
+
+  box-shadow:
+    0 10px 30px
+    rgba(80, 60, 45, .06);
+
+  transition:
+    transform .3s ease,
+    box-shadow .3s ease;
+}
+
+
+.product-card:hover {
+
+  transform: translateY(-5px);
+
+  box-shadow:
+    0 18px 35px
+    rgba(80, 60, 45, .11);
+}
+
+
+/* =========================================================
+   PRODUCT IMAGE
+========================================================= */
+
+.product-image {
+
+  min-height: 310px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  background:
+    var(--sage-light);
+
+  color: var(--brown-light);
+
+  font-family: var(--serif);
+
+  font-size: 18px;
+
+  text-align: center;
+}
+
+
+.product-image span {
+
+  padding: 10px 18px;
+
+  background:
+    rgba(252, 249, 243, .85);
+}
+
+
+/* Candle placeholder */
+
+.candle-placeholder {
+
+  background:
+
+    radial-gradient(
+      circle at center,
+      rgba(255,255,255,.35),
+      transparent 45%
+    ),
+
+    var(--sage-light);
+}
+
+
+/* Cupcake Mini placeholder */
+
+.minis-placeholder {
+
+  background:
+
+    radial-gradient(
+      circle at center,
+      rgba(255,255,255,.35),
+      transparent 45%
+    ),
+
+    var(--lavender-light);
+}
+
+
+/* Home fragrance placeholder */
+
+.fragrance-placeholder {
+
+  background:
+
+    radial-gradient(
+      circle at center,
+      rgba(255,255,255,.35),
+      transparent 45%
+    ),
+
+    var(--mauve-light);
+}
+
+
+/* =========================================================
+   PRODUCT INFORMATION
+========================================================= */
+
+.product-info {
+
+  padding: 25px;
+}
+
+
+.product-category {
+
+  margin-bottom: 5px;
+
+  color: var(--mauve);
+
+  font-size: 10px;
+
+  font-weight: 600;
+
+  letter-spacing: .18em;
+
+  text-transform: uppercase;
+}
+
+
+.product-info h3 {
+
+  margin-bottom: 7px;
+
+  color: var(--brown);
+
+  font-family: var(--serif);
+
+  font-size: 31px;
+
+  font-weight: 500;
+
+  line-height: 1;
+}
+
+
+.product-info > p:not(.product-category) {
+
+  min-height: 50px;
+
+  color: var(--brown-light);
+
+  font-family: var(--serif);
+
+  font-size: 15px;
+
+  line-height: 1.4;
+}
+
+
+/* =========================================================
+   PRODUCT BOTTOM
+========================================================= */
+
+.product-bottom {
+
+  margin-top: 20px;
+
+  padding-top: 17px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 10px;
+
+  border-top:
+    1px solid rgba(118, 91, 74, .15);
+}
+
+
+.product-bottom strong {
+
+  color: var(--brown);
+
+  font-family: var(--serif);
+
+  font-size: 23px;
+
+  font-weight: 600;
+}
+
+
+.product-bottom button {
+
+  padding: 8px 14px;
+
+  border: 1px solid var(--brown);
+
+  background: transparent;
+
+  color: var(--brown);
+
+  font-family: var(--serif);
+
+  font-size: 13px;
+
+  cursor: pointer;
+
+  transition: .25s ease;
+}
+
+
+.product-bottom button:hover {
+
+  background: var(--brown);
+
+  color: var(--ivory);
+}
+
+
+/* =========================================================
+   BLUEGRASS SHOP MESSAGE
+========================================================= */
+
+.shop-message {
+
+  min-height: 390px;
+
+  padding: 80px 25px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+
+  background:
+
+    linear-gradient(
+      rgba(118, 91, 74, .90),
+      rgba(118, 91, 74, .90)
+    ),
+
+    url("assets/bluegrass.jpg")
+    center / cover;
+}
+
+
+.shop-message > div {
+
+  max-width: 700px;
+}
+
+
+.shop-message .section-kicker {
+
+  color: var(--mauve-light);
+}
+
+
+.shop-message h2 {
+
+  margin: 10px 0 15px;
+
+  color: var(--ivory);
+
+  font-family: var(--serif);
+
+  font-size:
+    clamp(48px, 6vw, 75px);
+
+  font-weight: 500;
+
+  line-height: .9;
+}
+
+
+.shop-message h2 em {
+
+  color: var(--sage-light);
+
+  font-family: var(--script);
+
+  font-size: 1.2em;
+
+  font-weight: 400;
+}
+
+
+.shop-message p:not(.section-kicker) {
+
+  max-width: 580px;
+
+  margin: auto;
+
+  color: rgba(252,249,243,.85);
+
+  font-family: var(--serif);
+
+  font-size: 19px;
+}
+
+
+/* =========================================================
+   CONTACT CTA
+========================================================= */
+
+.shop-contact {
+
+  padding: 90px 25px;
+
+  background: var(--ivory);
+
+  text-align: center;
+}
+
+
+.shop-contact > div {
+
+  max-width: 750px;
+
+  margin: auto;
+
+  padding: 65px 30px;
+
+  background:
+
+    linear-gradient(
+      135deg,
+      #e4e9df,
+      #eee5e7
+    );
+}
+
+
+.shop-contact h2 {
+
+  margin: 8px 0 15px;
+
+  color: var(--brown);
+
+  font-family: var(--serif);
+
+  font-size:
+    clamp(45px, 5vw, 65px);
+
+  font-weight: 500;
+
+  line-height: .95;
+}
+
+
+.shop-contact h2 em {
+
+  color: var(--sage-dark);
+
+  font-family: var(--script);
+
+  font-size: 1.15em;
+
+  font-weight: 400;
+}
+
+
+.shop-contact p:not(.section-kicker) {
+
+  max-width: 570px;
+
+  margin: 0 auto 25px;
+
+  color: var(--brown-light);
+
+  font-family: var(--serif);
+
+  font-size: 18px;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+  .product-grid {
+
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+  .shop-hero {
+
+    min-height: 360px;
+
+    padding:
+      65px 20px;
+  }
+
+
+  .shop-hero h1 {
+
+    font-size: 55px;
+  }
+
+
+  .shop-hero h1 em {
+
+    font-size: 68px;
+  }
+
+
+  .shop-hero p:not(.section-kicker) {
+
+    font-size: 17px;
+  }
+
+
+  .shop-navigation {
+
+    gap: 7px;
+
+    padding:
+      15px 12px;
+  }
+
+
+  .shop-navigation a {
+
+    padding:
+      8px 15px;
+
+    font-size: 13px;
+  }
+
+
+  .product-section {
+
+    padding:
+      75px 20px;
+  }
+
+
+  .product-grid {
+
+    grid-template-columns: 1fr;
+
+    gap: 22px;
+  }
+
+
+  .product-image {
+
+    min-height: 300px;
+  }
+
+
+  .product-heading {
+
+    margin-bottom: 40px;
+  }
+
+
+  .product-heading h2 {
+
+    font-size: 50px;
+  }
+
+
+  .shop-message {
+
+    min-height: 350px;
+  }
+
+
+  .shop-contact {
+
+    padding:
+      60px 15px;
+  }
+
+
+  .shop-contact > div {
+
+    padding:
+      50px 20px;
+  }
+
+}
