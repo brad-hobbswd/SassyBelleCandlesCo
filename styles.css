@@ -359,7 +359,7 @@ button {
   inset: 0;
 
   background-image:
-    url("assets/hero-candle.jpg");
+    url("assets/A99FE850-9B03-426E-965D-B580A9F09220.png");
 
   background-position: center;
   background-size: cover;
@@ -776,7 +776,7 @@ button {
       rgba(65, 48, 38, .08)
     ),
 
-    url("assets/candles.jpg")
+    url("assets/84D81C6B-CEC8-4B19-8C51-52285CA076A0.png")
     center / cover,
 
     var(--sage-light);
@@ -792,7 +792,7 @@ button {
       rgba(65, 48, 38, .06)
     ),
 
-    url("assets/cupcake-minis.jpg")
+    url("assets/C93B361D-7C9D-4F1D-BC28-1D8A29E8AA83.png")
     center / cover,
 
     var(--lavender-light);
@@ -808,7 +808,7 @@ button {
       rgba(65, 48, 38, .06)
     ),
 
-    url("assets/home-fragrances.jpg")
+    url("assets/D0E70EB3-2B4B-478E-A06B-3CD5E94860ED.png")
     center / cover,
 
     var(--mauve-light);
@@ -945,7 +945,7 @@ button {
       rgba(247, 241, 231, .88)
     ),
 
-    url("assets/bluegrass.jpg")
+    url("assets/9FCE4801-09C3-4F65-9F54-085B392BD931.png")
     center / cover;
 
   opacity: .95;
