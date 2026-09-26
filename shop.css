@@ -93,6 +93,200 @@
 }
 
 
+
+/* =========================================================
+   SEASONAL SPECIAL
+========================================================= */
+
+.seasonal-special {
+
+  padding: 55px 6vw;
+
+  background:
+    linear-gradient(
+      135deg,
+      #f2e4d2,
+      #e4e9df
+    );
+
+  border-top: 1px solid rgba(118, 91, 74, .10);
+  border-bottom: 1px solid rgba(118, 91, 74, .10);
+}
+
+
+.seasonal-special-inner {
+
+  max-width: 1100px;
+
+  margin: auto;
+
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1fr)
+    280px;
+
+  align-items: center;
+
+  gap: 45px;
+
+  padding: 35px 40px;
+
+  background:
+    rgba(252, 249, 243, .78);
+
+  border: 1px solid
+    rgba(118, 91, 74, .16);
+
+  box-shadow:
+    0 12px 30px
+    rgba(80, 60, 45, .07);
+}
+
+
+.seasonal-special-copy h2 {
+
+  margin: 7px 0 12px;
+
+  color: var(--brown);
+
+  font-family: var(--serif);
+
+  font-size:
+    clamp(38px, 4vw, 56px);
+
+  font-weight: 500;
+
+  line-height: .95;
+}
+
+
+.seasonal-special-copy h2 em {
+
+  color: var(--sage-dark);
+
+  font-family: var(--script);
+
+  font-size: 1.08em;
+
+  font-weight: 400;
+}
+
+
+.seasonal-special-copy > p:not(.section-kicker):not(.seasonal-note) {
+
+  max-width: 650px;
+
+  margin: 0;
+
+  color: var(--brown-light);
+
+  font-family: var(--serif);
+
+  font-size: 17px;
+
+  line-height: 1.45;
+}
+
+
+.seasonal-note {
+
+  margin: 13px 0 0;
+
+  color: var(--mauve);
+
+  font-family: var(--serif);
+
+  font-size: 13px;
+
+  letter-spacing: .08em;
+
+  text-transform: uppercase;
+}
+
+
+.seasonal-price-card {
+
+  min-height: 190px;
+
+  padding: 25px 20px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  text-align: center;
+
+  background: var(--brown);
+
+  color: var(--ivory);
+
+  border: 1px solid
+    rgba(252, 249, 243, .35);
+
+  box-shadow:
+    0 12px 25px
+    rgba(80, 60, 45, .12);
+}
+
+
+.seasonal-price-label {
+
+  color: var(--mauve-light);
+
+  font-size: 10px;
+
+  font-weight: 600;
+
+  letter-spacing: .18em;
+
+}
+
+
+.seasonal-price {
+
+  margin: 2px 0 0;
+
+  color: var(--ivory);
+
+  font-family: var(--serif);
+
+  font-size: 62px;
+
+  font-weight: 600;
+
+  line-height: 1;
+}
+
+
+.seasonal-price-detail {
+
+  margin-top: 5px;
+
+  color: var(--ivory);
+
+  font-family: var(--serif);
+
+  font-size: 17px;
+}
+
+
+.seasonal-price-regular {
+
+  margin-top: 10px;
+
+  color: rgba(252,249,243,.72);
+
+  font-family: var(--serif);
+
+  font-size: 12px;
+}
+
+
 /* =========================================================
    SHOP CATEGORY NAVIGATION
 ========================================================= */
@@ -744,6 +938,49 @@
 
     padding:
       50px 20px;
+  }
+
+}
+
+/* =========================================================
+   SEASONAL SPECIAL MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+  .seasonal-special {
+
+    padding:
+      35px 15px;
+  }
+
+
+  .seasonal-special-inner {
+
+    grid-template-columns: 1fr;
+
+    gap: 25px;
+
+    padding:
+      30px 22px;
+  }
+
+
+  .seasonal-special-copy {
+
+    text-align: center;
+  }
+
+
+  .seasonal-special-copy > p:not(.section-kicker):not(.seasonal-note) {
+
+    font-size: 16px;
+  }
+
+
+  .seasonal-price-card {
+
+    min-height: 165px;
   }
 
 }
